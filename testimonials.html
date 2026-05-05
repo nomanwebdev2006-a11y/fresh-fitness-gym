@@ -1,0 +1,278 @@
+<!DOCTYPE html><html class="dark" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Testimonials - Fresh Fitness Gym</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;700;800;900&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary": "#a6e358",
+                        "surface-variant": "#353534",
+                        "surface-container-low": "#1c1b1b",
+                        "on-secondary-fixed": "#001b3c",
+                        "inverse-primary": "#416900",
+                        "error-container": "#93000a",
+                        "surface-bright": "#393939",
+                        "tertiary-fixed": "#e2e2e2",
+                        "secondary": "#a7c8ff",
+                        "tertiary-container": "#b4b5b5",
+                        "surface": "#131313",
+                        "outline-variant": "#424938",
+                        "surface-dim": "#131313",
+                        "on-primary-fixed": "#102000",
+                        "inverse-surface": "#e5e2e1",
+                        "on-tertiary": "#2f3131",
+                        "error": "#ffb4ab",
+                        "background": "#131313",
+                        "secondary-container": "#1f477b",
+                        "surface-container-lowest": "#0e0e0e",
+                        "on-error-container": "#ffdad6",
+                        "on-primary-container": "#304f00",
+                        "on-secondary": "#003061",
+                        "primary-fixed": "#b7f568",
+                        "primary-container": "#8cc63f",
+                        "on-surface-variant": "#c2c9b3",
+                        "on-primary": "#203700",
+                        "on-tertiary-container": "#454747",
+                        "primary-fixed-dim": "#9cd84f",
+                        "on-primary-fixed-variant": "#304f00",
+                        "outline": "#8c937f",
+                        "tertiary-fixed-dim": "#c6c6c7",
+                        "on-background": "#e5e2e1",
+                        "surface-container-highest": "#353534",
+                        "surface-container-high": "#2a2a2a",
+                        "tertiary": "#d0d1d1",
+                        "on-secondary-container": "#93b6f1",
+                        "on-secondary-fixed-variant": "#1f477b",
+                        "secondary-fixed-dim": "#a7c8ff",
+                        "surface-tint": "#9cd84f",
+                        "surface-container": "#201f1f",
+                        "inverse-on-surface": "#313030",
+                        "secondary-fixed": "#d5e3ff",
+                        "on-tertiary-fixed-variant": "#454747",
+                        "on-error": "#690005",
+                        "on-tertiary-fixed": "#1a1c1c",
+                        "on-surface": "#e5e2e1"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "xs": "4px",
+                        "lg": "48px",
+                        "md": "24px",
+                        "xl": "80px",
+                        "sm": "12px",
+                        "margin": "32px",
+                        "gutter": "24px",
+                        "base": "8px"
+                    },
+                    "fontFamily": {
+                        "h1": ["Lexend"],
+                        "h2": ["Lexend"],
+                        "stat-display": ["Lexend"],
+                        "h3": ["Lexend"],
+                        "label-bold": ["Lexend"],
+                        "body-lg": ["Lexend"],
+                        "body-md": ["Lexend"]
+                    },
+                    "fontSize": {
+                        "h1": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                        "h2": ["36px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                        "stat-display": ["64px", {"lineHeight": "1", "letterSpacing": "-0.04em", "fontWeight": "800"}],
+                        "h3": ["24px", {"lineHeight": "1.3", "fontWeight": "700"}],
+                        "label-bold": ["14px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "body-md": ["16px", {"lineHeight": "1.5", "fontWeight": "400"}]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .material-symbols-outlined.fill {
+            font-variation-settings: 'FILL' 1;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body-md min-h-screen flex flex-col pt-20 pb-20 md:pb-0">
+<!-- TopNavBar (Web) -->
+<nav class="hidden md:flex fixed top-0 w-full z-[100] h-20 bg-zinc-950/90 backdrop-blur-md border-b border-white/10 shadow-2xl">
+<div class="max-w-7xl mx-auto px-6 flex justify-between items-center w-full">
+<div class="text-2xl font-black text-lime-400 tracking-tighter">FRESH FITNESS GYM
+            </div>
+<div class="flex gap-6 items-center">
+<a class="font-lexend tracking-tight text-sm font-bold uppercase text-white/70 hover:text-lime-400 transition-colors duration-200" href="#">Home</a>
+<a class="font-lexend tracking-tight text-sm font-bold uppercase text-lime-400 border-b-2 border-lime-400 pb-1" href="#">About</a>
+<a class="font-lexend tracking-tight text-sm font-bold uppercase text-white/70 hover:text-lime-400 transition-colors duration-200" href="#">Services</a>
+<a class="font-lexend tracking-tight text-sm font-bold uppercase text-white/70 hover:text-lime-400 transition-colors duration-200" href="#">Plans</a>
+<a class="font-lexend tracking-tight text-sm font-bold uppercase text-white/70 hover:text-lime-400 transition-colors duration-200" href="#">Trainers</a>
+<a class="font-lexend tracking-tight text-sm font-bold uppercase text-white/70 hover:text-lime-400 transition-colors duration-200" href="#">Contact</a>
+</div>
+<button class="bg-primary text-background font-label-bold text-label-bold uppercase px-6 py-3 rounded-DEFAULT hover:bg-primary-fixed transition-colors active:scale-95 duration-150">JOIN NOW</button>
+</div>
+</nav>
+<!-- BottomNavBar (Mobile) -->
+<nav class="md:hidden fixed bottom-0 w-full z-50 h-20 rounded-t-3xl bg-zinc-950/95 backdrop-blur-lg border-t border-lime-400/20 shadow-[0_-10px_30px_rgba(0,0,0,0.6)]">
+<div class="fixed bottom-0 left-0 w-full flex justify-around items-center px-4 pb-2 h-full">
+<a class="flex flex-col items-center justify-center text-white/40 px-4 py-2 active:bg-white/5 active:scale-90 transition-transform duration-200" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="home">home</span>
+<span class="font-lexend text-[10px] font-bold uppercase tracking-wider">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-lime-400 bg-lime-400/10 rounded-2xl px-4 py-2 active:bg-white/5 active:scale-90 transition-transform duration-200" href="#">
+<span class="material-symbols-outlined mb-1 fill" data-icon="fitness_center" data-weight="fill">fitness_center</span>
+<span class="font-lexend text-[10px] font-bold uppercase tracking-wider">Plans</span>
+</a>
+<a class="flex flex-col items-center justify-center text-white/40 px-4 py-2 active:bg-white/5 active:scale-90 transition-transform duration-200" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="call">call</span>
+<span class="font-lexend text-[10px] font-bold uppercase tracking-wider">Call</span>
+</a>
+<a class="flex flex-col items-center justify-center text-white/40 px-4 py-2 active:bg-white/5 active:scale-90 transition-transform duration-200" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="chat">chat</span>
+<span class="font-lexend text-[10px] font-bold uppercase tracking-wider">WhatsApp</span>
+</a>
+</div>
+</nav>
+<main class="flex-grow flex flex-col">
+<!-- Hero Section -->
+<section class="py-xl px-margin flex-shrink-0 flex items-center justify-center relative overflow-hidden bg-surface-container-low border-b border-surface-variant">
+<div class="absolute inset-0 bg-gradient-to-b from-primary/10 to-transparent pointer-events-none"></div>
+<div class="max-w-7xl mx-auto w-full flex flex-col items-center text-center z-10">
+<img alt="Fresh Fitness Gym Logo" class="w-32 h-32 mb-8 rounded-full border-2 border-primary/20 object-cover" data-alt="A bold, high-contrast circular gym logo featuring deep navy blue and vibrant lime green accents. The logo should feel modern, kinetic, and highly professional, suitable for a dark-mode fitness application. Focus on sharp geometry and energetic colors against a dark background." src="https://lh3.googleusercontent.com/aida/ADBb0uipDXuf4yGmD95k9BnPbmxnU2Fx5RLqpTIFDdpqzIrp7Onww1FGfAucfLyWuZHGihJOVIAt8iNjqH0A6YZwJ2jL01cpXZtkq98zuDz-fzJY3ad6YAHPoIWV4AV75CgH7cDDxeyeedLVV9xO95-5ax-DOJVKtx8IjymOHxI3DF9f-V7nSD2QfymARxSC503k3ONuPw178SUoLoabZFWoxJgNpel3lJ5QxdkpOq8ofqKX5KQ435Ai855XSIozUnoQ88i8NQuNSZRwZfg">
+<h1 class="font-h1 text-h1 text-primary uppercase mb-6">Real Results. <br> <span class="text-on-surface">No Excuses.</span></h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mb-12">See the undeniable proof from our dedicated members who pushed their limits and transformed their lives at Fresh Fitness Gym.</p>
+<div class="flex flex-col md:flex-row gap-6 items-center bg-surface-container p-6 rounded-lg border border-surface-variant shadow-lg">
+<div class="text-center md:text-left">
+<p class="font-stat-display text-stat-display text-primary">4.9</p>
+<div class="flex text-primary justify-center md:justify-start mt-2">
+<span class="material-symbols-outlined fill text-2xl">star</span>
+<span class="material-symbols-outlined fill text-2xl">star</span>
+<span class="material-symbols-outlined fill text-2xl">star</span>
+<span class="material-symbols-outlined fill text-2xl">star</span>
+<span class="material-symbols-outlined fill text-2xl">star_half</span>
+</div>
+</div>
+<div class="hidden md:block w-px h-16 bg-surface-variant"></div>
+<div>
+<p class="font-h3 text-h3 text-on-surface">Based on 500+ Reviews</p>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">From verified members crushing their goals.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Transformations Masonry -->
+<section class="py-xl px-margin bg-surface">
+<div class="max-w-7xl mx-auto">
+<div class="flex justify-between items-end mb-12">
+<div>
+<h2 class="font-h2 text-h2 text-on-surface uppercase mb-2 border-l-4 border-primary pl-4">Member Transformations</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">The discipline speaks for itself.</p>
+</div>
+<button class="hidden md:flex bg-secondary-container text-white font-label-bold text-label-bold uppercase px-6 py-3 rounded-DEFAULT hover:bg-opacity-90 transition-colors items-center gap-2">
+                        View All
+                        <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+<div class="columns-1 md:columns-2 lg:columns-3 gap-6 space-y-6">
+<!-- Transformation Card 1 -->
+<div class="break-inside-avoid bg-surface-container-low rounded-lg overflow-hidden border border-surface-variant hover:border-primary/50 transition-colors shadow-lg relative group">
+<div class="absolute top-4 left-4 bg-primary/15 text-primary font-label-bold text-[12px] px-3 py-1 rounded-full uppercase z-10 border border-primary/30 backdrop-blur-sm">
+                            6 Months
+                        </div>
+<div class="h-64 bg-surface-variant relative">
+<div class="absolute inset-0 bg-gradient-to-t from-background to-transparent z-0"></div>
+</div>
+<div class="p-6 relative z-10">
+<h3 class="font-h3 text-h3 text-on-surface mb-1 uppercase">RAMESH KUMAR VERMA</h3>
+<p class="font-body-md text-body-md text-primary mb-4 font-bold">Lost 45 lbs • Gained 10 lbs Muscle</p>
+<p class="font-body-md text-body-md text-on-surface-variant italic border-l-2 border-secondary-container pl-4">"The high-intensity program here broke me down and rebuilt me stronger. The coaches don't let you quit."</p>
+</div>
+</div>
+<!-- Transformation Card 2 -->
+<div class="break-inside-avoid bg-surface-container-low rounded-lg overflow-hidden border border-surface-variant hover:border-primary/50 transition-colors shadow-lg relative group">
+<div class="absolute top-4 left-4 bg-primary/15 text-primary font-label-bold text-[12px] px-3 py-1 rounded-full uppercase z-10 border border-primary/30 backdrop-blur-sm">
+                            1 Year
+                        </div>
+<div class="h-80 bg-surface-variant relative">
+<div class="absolute inset-0 bg-gradient-to-t from-background to-transparent z-0"></div>
+</div>
+<div class="p-6 relative z-10">
+<h3 class="font-h3 text-h3 text-on-surface mb-1 uppercase">ADITI</h3>
+<p class="font-body-md text-body-md text-primary mb-4 font-bold">Powerlifting Total +120 lbs</p>
+<p class="font-body-md text-body-md text-on-surface-variant italic border-l-2 border-secondary-container pl-4">"I came in wanting to tone up and left wanting to lift heavy. The equipment and atmosphere are unmatched for serious athletes."</p>
+</div>
+</div>
+<!-- Transformation Card 3 -->
+<div class="break-inside-avoid bg-surface-container-low rounded-lg overflow-hidden border border-surface-variant hover:border-primary/50 transition-colors shadow-lg relative group">
+<div class="absolute top-4 left-4 bg-primary/15 text-primary font-label-bold text-[12px] px-3 py-1 rounded-full uppercase z-10 border border-primary/30 backdrop-blur-sm">
+                            3 Months
+                        </div>
+<div class="h-56 bg-surface-variant relative">
+<div class="absolute inset-0 bg-gradient-to-t from-background to-transparent z-0"></div>
+</div>
+<div class="p-6 relative z-10">
+<h3 class="font-h3 text-h3 text-on-surface mb-1 uppercase">SALONI</h3>
+<p class="font-body-md text-body-md text-primary mb-4 font-bold">HIIT Program Survivor</p>
+<p class="font-body-md text-body-md text-on-surface-variant italic border-l-2 border-secondary-container pl-4">"Just 12 weeks of consistent effort and the difference is night and day. The tracking tools kept me accountable."</p>
+</div>
+</div>
+<!-- More Cards to show masonry effect -->
+<div class="break-inside-avoid bg-surface-container-low rounded-lg overflow-hidden border border-surface-variant hover:border-primary/50 transition-colors shadow-lg relative group">
+<div class="p-6">
+<div class="flex items-center gap-2 mb-4 text-primary">
+<span class="material-symbols-outlined fill text-xl">star</span>
+<span class="material-symbols-outlined fill text-xl">star</span>
+<span class="material-symbols-outlined fill text-xl">star</span>
+<span class="material-symbols-outlined fill text-xl">star</span>
+<span class="material-symbols-outlined fill text-xl">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface mb-6">"Hands down the best gym I've ever joined. No fluff, just serious equipment and people ready to work."</p>
+<h3 class="font-label-bold text-label-bold text-on-surface-variant uppercase">— FAZAL, Professional Athlete</h3>
+</div>
+</div>
+</div>
+<div class="mt-8 text-center md:hidden">
+<button class="w-full bg-surface-container border border-primary text-primary font-label-bold text-label-bold uppercase px-6 py-4 rounded-DEFAULT hover:bg-primary/10 transition-colors">
+                        View All Transformations
+                    </button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-16 relative bg-zinc-950 border-t-2 border-zinc-900 mt-auto">
+<div class="max-w-7xl mx-auto px-8 grid grid-cols-1 md:grid-cols-4 gap-12">
+<div>
+<div class="text-xl font-black text-lime-400 italic mb-6">FRESH FITNESS GYM</div>
+<p class="font-body-md text-zinc-500 mb-6 max-w-xs">Forging elite fitness through discipline, data, and relentless effort.</p>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="font-lexend text-xs uppercase tracking-widest text-lime-400 font-black mb-2">Links</h4>
+<a class="font-lexend text-xs uppercase tracking-widest text-zinc-500 hover:text-white transition-colors duration-300" href="#">Locations</a>
+<a class="font-lexend text-xs uppercase tracking-widest text-zinc-500 hover:text-white transition-colors duration-300" href="#">Member Portal</a>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="font-lexend text-xs uppercase tracking-widest text-lime-400 font-black mb-2">Legal</h4>
+<a class="font-lexend text-xs uppercase tracking-widest text-zinc-500 hover:text-white transition-colors duration-300" href="#">Privacy Policy</a>
+<a class="font-lexend text-xs uppercase tracking-widest text-zinc-500 hover:text-white transition-colors duration-300" href="#">Terms</a>
+</div>
+<div>
+<p class="font-lexend text-xs uppercase tracking-widest text-zinc-500 mt-8 md:mt-0">© 2024 PERFORMANCE GYM. ALL RIGHTS RESERVED.</p>
+</div>
+</div>
+</footer>
+
+
+</body></html>

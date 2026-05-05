@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Fresh Fitness Gym - Membership Plans</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary": "#a6e358",
+                        "surface-variant": "#353534",
+                        "surface-container-low": "#1c1b1b",
+                        "on-secondary-fixed": "#001b3c",
+                        "inverse-primary": "#416900",
+                        "error-container": "#93000a",
+                        "surface-bright": "#393939",
+                        "tertiary-fixed": "#e2e2e2",
+                        "secondary": "#a7c8ff",
+                        "tertiary-container": "#b4b5b5",
+                        "surface": "#131313",
+                        "outline-variant": "#424938",
+                        "surface-dim": "#131313",
+                        "on-primary-fixed": "#102000",
+                        "inverse-surface": "#e5e2e1",
+                        "on-tertiary": "#2f3131",
+                        "error": "#ffb4ab",
+                        "background": "#131313",
+                        "secondary-container": "#1f477b",
+                        "surface-container-lowest": "#0e0e0e",
+                        "on-error-container": "#ffdad6",
+                        "on-primary-container": "#304f00",
+                        "on-secondary": "#003061",
+                        "primary-fixed": "#b7f568",
+                        "primary-container": "#8cc63f",
+                        "on-surface-variant": "#c2c9b3",
+                        "on-primary": "#203700",
+                        "on-tertiary-container": "#454747",
+                        "primary-fixed-dim": "#9cd84f",
+                        "on-primary-fixed-variant": "#304f00",
+                        "outline": "#8c937f",
+                        "tertiary-fixed-dim": "#c6c6c7",
+                        "on-background": "#e5e2e1",
+                        "surface-container-highest": "#353534",
+                        "surface-container-high": "#2a2a2a",
+                        "tertiary": "#d0d1d1",
+                        "on-secondary-container": "#93b6f1",
+                        "on-secondary-fixed-variant": "#1f477b",
+                        "secondary-fixed-dim": "#a7c8ff",
+                        "surface-tint": "#9cd84f",
+                        "surface-container": "#201f1f",
+                        "inverse-on-surface": "#313030",
+                        "secondary-fixed": "#d5e3ff",
+                        "on-tertiary-fixed-variant": "#454747",
+                        "on-error": "#690005",
+                        "on-tertiary-fixed": "#1a1c1c",
+                        "on-surface": "#e5e2e1"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "xs": "4px",
+                        "lg": "48px",
+                        "md": "24px",
+                        "xl": "80px",
+                        "sm": "12px",
+                        "margin": "32px",
+                        "gutter": "24px",
+                        "base": "8px"
+                    },
+                    "fontFamily": {
+                        "h1": ["Lexend"],
+                        "h2": ["Lexend"],
+                        "stat-display": ["Lexend"],
+                        "h3": ["Lexend"],
+                        "label-bold": ["Lexend"],
+                        "body-lg": ["Lexend"],
+                        "body-md": ["Lexend"]
+                    },
+                    "fontSize": {
+                        "h1": ["48px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "800" }],
+                        "h2": ["36px", { "lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+                        "stat-display": ["64px", { "lineHeight": "1", "letterSpacing": "-0.04em", "fontWeight": "800" }],
+                        "h3": ["24px", { "lineHeight": "1.3", "fontWeight": "700" }],
+                        "label-bold": ["14px", { "lineHeight": "1.2", "fontWeight": "700" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "body-md": ["16px", { "lineHeight": "1.5", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body { background-color: theme('colors.background'); color: theme('colors.on-background'); }
+    </style>
+</head>
+<body class="antialiased min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-[100] h-20 bg-zinc-950/90 backdrop-blur-md border-b border-white/10 shadow-2xl hidden md:flex">
+<div class="max-w-7xl mx-auto px-6 flex justify-between items-center w-full">
+<div class="flex items-center gap-4">
+<img alt="Fresh Fitness Gym Logo" class="h-10 w-10 rounded-full object-cover" data-alt="A high-contrast, energetic logo for a gym featuring vibrant lime green and deep navy blue. The logo is modern, dynamic, and conveys a sense of high-intensity performance. The background is a stark, deep black to make the logo pop." src="https://lh3.googleusercontent.com/aida/ADBb0uipDXuf4yGmD95k9BnPbmxnU2Fx5RLqpTIFDdpqzIrp7Onww1FGfAucfLyWuZHGihJOVIAt8iNjqH0A6YZwJ2jL01cpXZtkq98zuDz-fzJY3ad6YAHPoIWV4AV75CgH7cDDxeyeedLVV9xO95-5ax-DOJVKtx8IjymOHxI3DF9f-V7nSD2QfymARxSC503k3ONuPw178SUoLoabZFWoxJgNpel3lJ5QxdkpOq8ofqKX5KQ435Ai855XSIozUnoQ88i8NQuNSZRwZfg"/>
+<span class="text-2xl font-black text-lime-400 tracking-tighter">Fresh Fitness gym</span>
+</div>
+<ul class="flex space-x-8">
+<li class=""><a class="font-lexend tracking-tight text-sm font-bold uppercase text-white/70 hover:text-lime-400 transition-colors duration-200 active:scale-95 transition-all duration-150" href="#">Home</a></li>
+<li class=""><a class="font-lexend tracking-tight text-sm font-bold uppercase text-white/70 hover:text-lime-400 transition-colors duration-200 active:scale-95 transition-all duration-150" href="#">About</a></li>
+<li class=""><a class="font-lexend tracking-tight text-sm font-bold uppercase text-white/70 hover:text-lime-400 transition-colors duration-200 active:scale-95 transition-all duration-150" href="#">Services</a></li>
+<li class=""><a class="font-lexend tracking-tight text-sm font-bold uppercase text-lime-400 border-b-2 border-lime-400 pb-1 active:scale-95 transition-all duration-150" href="#">Plans</a></li>
+<li class=""><a class="font-lexend tracking-tight text-sm font-bold uppercase text-white/70 hover:text-lime-400 transition-colors duration-200 active:scale-95 transition-all duration-150" href="#">Trainers</a></li>
+<li class=""><a class="font-lexend tracking-tight text-sm font-bold uppercase text-white/70 hover:text-lime-400 transition-colors duration-200 active:scale-95 transition-all duration-150" href="#">Contact</a></li>
+</ul>
+<button class="bg-primary text-on-primary font-label-bold uppercase px-6 py-3 rounded-DEFAULT hover:bg-primary-container transition-colors">JOIN NOW</button>
+</div>
+</nav>
+<!-- Main Content -->
+<main class="flex-grow pt-[100px] md:pt-32 pb-32">
+<div class="max-w-7xl mx-auto px-gutter md:px-margin">
+<header class="text-center mb-xl">
+<h1 class="font-h1 text-h1 text-on-background mb-md">Membership Plans</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">Choose the tier that fits your intensity. No hidden fees. Pure performance.</p>
+</header>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter lg:gap-md">
+<!-- Basic Plan -->
+<div class="bg-surface-container-low rounded-xl border border-surface-variant p-lg flex flex-col relative">
+<h3 class="font-h3 text-h3 text-on-background mb-xs">GOLD</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-md">For the steady starter.</p>
+<div class="mb-lg"><span class="font-stat-display text-stat-display text-primary">2699₹</span>
+<span class="font-body-md text-body-md text-on-surface-variant block mt-xs">FOR 3 MONTHS</span></div>
+<ul class="space-y-sm flex-grow mb-xl">
+<li class="flex items-center gap-sm">
+<span class="material-symbols-outlined text-primary" style='font-variation-settings: "FILL" 1;'>check_circle</span>
+<span class="font-body-md text-body-md text-on-background">Access to gym floor</span>
+</li>
+<li class="flex items-center gap-sm">
+<span class="material-symbols-outlined text-primary" style='font-variation-settings: "FILL" 1;'>check_circle</span>
+<span class="font-body-md text-body-md text-on-background">Standard equipment</span>
+</li>
+<li class="flex items-center gap-sm text-surface-variant"><span style='color: rgb(166, 227, 88); font-family: "Material Symbols Outlined"; font-size: 24px; white-space: nowrap;'><br/></span></li>
+</ul>
+<button class="w-full bg-secondary-container text-on-secondary font-label-bold uppercase py-4 rounded-DEFAULT mt-auto hover:bg-secondary transition-colors">Select GOLD</button>
+</div>
+<!-- Pro Plan -->
+<div class="bg-surface-container-low rounded-xl border border-primary/50 p-lg flex flex-col relative shadow-[0_0_30px_rgba(166,227,88,0.1)] transform md:-translate-y-4">
+<div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-primary/15 text-primary px-4 py-1 rounded-full font-label-bold text-label-bold uppercase border border-primary">
+                        Most Popular
+                    </div>
+<h3 class="font-h3 text-h3 text-on-background mb-xs mt-sm">GOLD</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-md">For the dedicated athlete.</p>
+<div class="mb-lg">
+<span class="font-stat-display text-stat-display text-primary">4999<span style="color: rgb(32, 33, 34); font-family: sans-serif; font-size: 16px; font-weight: 400; letter-spacing: normal; background-color: rgb(255, 255, 255);">₹</span><br/></span>
+<span class="font-body-md text-body-md text-on-surface-variant">6 months</span>
+</div>
+<ul class="space-y-sm flex-grow mb-xl">
+<li class="flex items-center gap-sm">
+<span class="material-symbols-outlined text-primary" style='font-variation-settings: "FILL" 1;'>check_circle</span>
+<span class="font-body-md text-body-md text-on-background">24/7 Access</span>
+</li>
+<li class="flex items-center gap-sm">
+<span class="material-symbols-outlined text-primary" style='font-variation-settings: "FILL" 1;'>check_circle</span>
+<span class="font-body-md text-body-md text-on-background">All group classes</span>
+</li>
+<li class="flex items-center gap-sm">
+<span class="material-symbols-outlined text-primary" style='font-variation-settings: "FILL" 1;'>check_circle</span>
+<span class="font-body-md text-body-md text-on-background">PAY FOR 6 MONTHS &amp; GET 7 MONTHS MEMBERSHIP</span>
+</li>
+</ul>
+<button class="w-full bg-primary text-on-primary font-label-bold uppercase py-4 rounded-DEFAULT mt-auto hover:bg-primary-container transition-colors shadow-[0_0_15px_rgba(166,227,88,0.3)]">Select GOLD</button>
+</div>
+<!-- Elite Plan -->
+<div class="bg-surface-container-low rounded-xl border border-surface-variant p-lg flex flex-col relative">
+<h3 class="font-h3 text-h3 text-on-background mb-xs">DIAMOND</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-md">For the peak performer.</p>
+<div class="mb-lg">
+<span class="font-stat-display text-stat-display text-primary">8999<span style="color: rgb(32, 33, 34); font-family: sans-serif; font-size: 16px; font-weight: 400; letter-spacing: normal; background-color: rgb(255, 255, 255);">₹</span></span>
+<span class="font-body-md text-body-md text-on-surface-variant">FOR 12 MONTHS</span>
+</div>
+<ul class="space-y-sm flex-grow mb-xl">
+<li class="flex items-center gap-sm">
+<span class="material-symbols-outlined text-primary" style='font-variation-settings: "FILL" 1;'>check_circle</span>
+<span class="font-body-md text-body-md text-on-background">All Pro features</span>
+</li>
+<li class="flex items-center gap-sm">
+<span class="material-symbols-outlined text-primary" style='font-variation-settings: "FILL" 1;'>check_circle</span>
+<span class="font-body-md text-body-md text-on-background">PAY FOR 12 MONTHS &amp; GET 15 MONTHS MEMBERSHIP</span>
+</li>
+<li class="flex items-center gap-sm">
+<span class="material-symbols-outlined text-primary" style='font-variation-settings: "FILL" 1;'>check_circle</span>
+<span class="font-body-md text-body-md text-on-background">Recovery zone access</span>
+</li>
+</ul>
+<button class="w-full border border-surface-variant bg-transparent text-on-background font-label-bold uppercase py-4 rounded-DEFAULT mt-auto hover:bg-surface-bright transition-colors">Select DIAMOND</button>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full py-16 relative bg-zinc-950 border-t-2 border-zinc-900 mt-auto">
+<div class="max-w-7xl mx-auto px-8 grid grid-cols-1 md:grid-cols-4 gap-12">
+<div class="flex flex-col gap-4">
+<span class="text-xl font-black text-lime-400 italic">Fresh Fitness Gym</span>
+<span class="font-lexend text-xs uppercase tracking-widest text-zinc-500">© 2024 PERFORMANCE GYM. ALL RIGHTS RESERVED.</span>
+</div>
+<div class="flex flex-col gap-2">
+<a class="font-lexend text-xs uppercase tracking-widest text-zinc-500 hover:text-white transition-colors duration-300" href="#">Locations</a>
+<a class="font-lexend text-xs uppercase tracking-widest text-zinc-500 hover:text-white transition-colors duration-300" href="#">Privacy Policy</a>
+<a class="font-lexend text-xs uppercase tracking-widest text-zinc-500 hover:text-white transition-colors duration-300" href="#">Terms</a>
+<a class="font-lexend text-xs uppercase tracking-widest text-zinc-500 hover:text-white transition-colors duration-300" href="#">Member Portal</a>
+</div>
+</div>
+</footer>
+<!-- BottomNavBar (Mobile Only) -->
+<nav class="fixed bottom-0 w-full z-50 h-20 rounded-t-3xl border-t border-white/5 bg-zinc-950/95 backdrop-blur-lg border-t border-lime-400/20 shadow-[0_-10px_30px_rgba(0,0,0,0.6)] md:hidden">
+<div class="fixed bottom-0 left-0 w-full flex justify-around items-center px-4 pb-2 h-full">
+<a class="flex flex-col items-center justify-center text-white/40 px-4 py-2 active:bg-white/5 active:scale-90 transition-transform duration-200" href="#">
+<span class="material-symbols-outlined mb-1">home</span>
+<span class="font-lexend text-[10px] font-bold uppercase tracking-wider">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-lime-400 bg-lime-400/10 rounded-2xl px-4 py-2 active:bg-white/5 active:scale-90 transition-transform duration-200" href="#">
+<span class="material-symbols-outlined mb-1 text-lime-400">fitness_center</span>
+<span class="font-lexend text-[10px] font-bold uppercase tracking-wider text-lime-400">Plans</span>
+</a>
+<a class="flex flex-col items-center justify-center text-white/40 px-4 py-2 active:bg-white/5 active:scale-90 transition-transform duration-200" href="#">
+<span class="material-symbols-outlined mb-1">call</span>
+<span class="font-lexend text-[10px] font-bold uppercase tracking-wider">Call</span>
+</a>
+<a class="flex flex-col items-center justify-center text-white/40 px-4 py-2 active:bg-white/5 active:scale-90 transition-transform duration-200" href="#">
+<span class="material-symbols-outlined mb-1">chat</span>
+<span class="font-lexend text-[10px] font-bold uppercase tracking-wider">WhatsApp</span>
+</a>
+</div>
+</nav>
+</body></html>
